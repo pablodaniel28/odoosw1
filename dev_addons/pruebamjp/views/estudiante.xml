@@ -1,0 +1,58 @@
+<odoo>
+  <data>
+
+    <!-- Vista de Lista para Estudiantes -->
+    <record model="ir.ui.view" id="pruebamjp.estudiante_index">
+      <!-- Nombre de la vista en el sistema -->
+      <field name="name">gestion estudiante list</field>
+      <!-- Modelo al que esta vista está asociada -->
+      <field name="model">pruebamjp.estudiante</field>
+      <!-- Definición de la estructura de la vista -->
+      <field name="arch" type="xml">
+        <tree>
+          <!-- Columnas que se mostrarán en la vista de lista de estudiantes -->
+          <field name="nombre" />
+          <field name="apellido" />
+          <field name="edad" />
+        </tree>
+      </field>
+    </record>
+
+    <!-- Vista de Formulario para Estudiantes -->
+    <record id="pruebamjp.estudiante_create" model="ir.ui.view">
+      <!-- Nombre de la vista en el sistema -->
+      <field name="name">pruebamjp.estudiante.form</field>
+      <!-- Modelo al que esta vista está asociada -->
+      <field name="model">pruebamjp.estudiante</field>
+      <!-- Definición de la estructura de la vista de formulario -->
+      <field name="arch" type="xml">
+        <form string="estudianteform">
+          <sheet>
+            <group>
+              <!-- Campos que se mostrarán en la vista de formulario de estudiantes -->
+              <field name="nombre" />
+              <field name="apellido" />
+              <field name="edad" />
+              <!-- Ejemplo de un campo comentado, que podría activarse en el futuro -->
+              <!-- <field name="estudiante_tutor"></field>  -->
+            </group>
+            <footer>
+              <!-- Espacio para añadir botones o acciones específicas en el formulario -->
+            </footer>
+          </sheet>
+        </form>
+      </field>
+    </record> 
+
+    <!-- Acción para abrir las vistas de lista y formulario de Estudiantes -->
+    <record model="ir.actions.act_window" id="pruebamjp.action_estudiante_window">
+      <!-- Texto que aparece en la interfaz al lado del botón "Nuevo" -->
+      <field name="name">ESTUDIANTES</field>
+      <!-- Modelo asociado a la acción -->
+      <field name="res_model">pruebamjp.estudiante</field>
+      <!-- Modos de vista a mostrar: "tree" para lista y "form" para formulario -->
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

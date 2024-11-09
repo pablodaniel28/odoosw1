@@ -1,0 +1,91 @@
+<odoo>
+  <data>
+
+    <!-- Menú Principal -->
+    <!-- Este es el menú raíz llamado "SCHOOL", al que se añadirán todos los submenús y opciones. -->
+    <menuitem name="SCHOOL" id="pruebamjp.menu_root" />
+
+    <!-- Submenú "Curso" -->
+    <!-- Este submenú agrupa opciones relacionadas con cursos, materias y profesores. -->
+    <menuitem name="Curso" id="pruebamjp.menu_2" parent="pruebamjp.menu_root" />
+
+    <!-- Opción "cursos" dentro del submenú "Curso" -->
+    <!-- Abre la vista de cursos definida por la acción "pruebamjp.action_curso_window". -->
+    <menuitem name="cursos" id="pruebamjp.menu_2_list" parent="pruebamjp.menu_2"
+      action="pruebamjp.action_curso_window" />
+  º
+    <!-- Opción "materias" dentro del submenú "Curso" -->
+    <menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2"
+      action="pruebamjp.action_materia_window" />
+
+    <!-- Opción "profesores" dentro del submenú "Curso" -->
+    <menuitem name="profesores" id="pruebamjp.menu_4_list" parent="pruebamjp.menu_2"
+      action="pruebamjp.action_profesor_window" />
+
+    <!-- Opción "ciclos" dentro del submenú "Curso" -->
+    <menuitem name="ciclos" id="pruebamjp.menu_5_list" parent="pruebamjp.menu_2"
+      action="pruebamjp.action_ciclo_window" />
+
+    <!-- Opción "horarios" dentro del submenú "Curso" -->
+    <menuitem name="horarios" id="pruebamjp.menu_12_list" parent="pruebamjp.menu_2"
+      action="pruebamjp.action_horario_window" />
+
+    <!-- Opción "curso_materia" dentro del submenú "Curso" -->
+    <menuitem name="curso_materia" id="pruebamjp.menu_13_list" parent="pruebamjp.menu_2"
+      action="pruebamjp.action_curso_materia_window" />
+
+    <!-- Opción "comunicados" dentro del submenú "Curso" -->
+    <menuitem name="comunicados" id="pruebamjp.menu_25_list" parent="pruebamjp.menu_2"
+      action="pruebamjp.action_comunicado_window" />
+
+
+    <!-- Submenú "Gestion" -->
+    <!-- Este submenú agrupa opciones relacionadas con la gestión y los periodos académicos. -->
+    <menuitem name="Gestion" id="pruebamjp.menu_3" parent="pruebamjp.menu_root" />
+
+    <!-- Opción "gestiones" dentro del submenú "Gestion" -->
+    <menuitem name="gestiones" id="pruebamjp.menu_6_list" parent="pruebamjp.menu_3"
+      action="pruebamjp.action_gestion_window" />
+
+    <!-- Opción "periodos academicos" dentro del submenú "Gestion" -->
+    <menuitem name="periodos academicos" id="pruebamjp.menu_7_list" parent="pruebamjp.menu_3"
+      action="pruebamjp.action_modalidad_gestion_window" />
+
+
+    <!-- Submenú "Estudiante" -->
+    <!-- Este submenú agrupa opciones relacionadas con estudiantes, tutores e inscripciones. -->
+    <menuitem name="Estudiante" id="pruebamjp.menu_4" parent="pruebamjp.menu_root" />
+
+    <!-- Opción "estudiantes" dentro del submenú "Estudiante" -->
+    <menuitem name="estudiantes" id="pruebamjp.menu_8_list" parent="pruebamjp.menu_4"
+      action="pruebamjp.action_estudiante_window" />
+
+    <!-- Opción "tutores" dentro del submenú "Estudiante" -->
+    <menuitem name="tutores" id="pruebamjp.menu_9_list" parent="pruebamjp.menu_4"
+      action="pruebamjp.action_tutor_window" />
+
+    <!-- Opción "tutores de los estudiantes" dentro del submenú "Estudiante" -->
+    <menuitem name="tutores de los estudiantes" id="pruebamjp.menu_16_list" parent="pruebamjp.menu_4"
+      action="pruebamjp.action_estudiante_tutor_window" />
+
+    <!-- Opción "inscripcion" dentro del submenú "Estudiante" -->
+    <menuitem name="inscripcion" id="pruebamjp.menu_17_list" parent="pruebamjp.menu_4"
+      action="pruebamjp.action_inscripcion_window" />
+
+    <!-- Opción "subnotas" dentro del submenú "Estudiante" -->
+    <!-- Maneja subnotas o calificaciones adicionales para los estudiantes. -->
+    <menuitem name="subnotas" id="pruebamjp.menu_19_list" parent="pruebamjp.menu_4"
+      action="pruebamjp.action_subnota_window" />
+
+    <!-- Opción "mensualidad" dentro del submenú "Estudiante" -->
+    <!-- Relacionada con los pagos de mensualidades. -->
+    <menuitem name="mensualidad" id="pruebamjp.menu_20_list" parent="pruebamjp.menu_4"
+      action="pruebamjp.action_mensualidad_window" />
+
+    <!-- Opción "asistencia" dentro del submenú "Estudiante" -->
+    <!-- Maneja la asistencia de los estudiantes. -->
+    <menuitem name="asistencia" id="pruebamjp.menu_29_list" parent="pruebamjp.menu_4"
+      action="pruebamjp.action_asistencia_window" />
+
+  </data>
+</odoo>

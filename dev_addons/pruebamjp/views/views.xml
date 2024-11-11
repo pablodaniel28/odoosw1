@@ -20,7 +20,7 @@
 
     <!-- Opción "profesores" dentro del submenú "Curso" -->
     <menuitem name="profesores" id="pruebamjp.menu_4_list" parent="pruebamjp.menu_2"
-      action="pruebamjp.action_profesor_window" />
+      action="pruebamjp.action_profesor_window" groups="base.group_system"/>
 
     <!-- Opción "ciclos" dentro del submenú "Curso" -->
     <menuitem name="ciclos" id="pruebamjp.menu_5_list" parent="pruebamjp.menu_2"

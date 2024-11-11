@@ -17,3 +17,771 @@
 2024-11-11 03:54:15,473 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 03:54:15] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.005
 2024-11-11 03:54:15,478 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 03:54:15] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.004
 2024-11-11 03:54:17,080 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 03:54:17] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.004
+2024-11-11 06:04:27,382 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-11-11 06:04:27,391 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-11-11 06:04:27,562 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-11-11 06:04:39,968 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 184, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 131, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-11-11 06:04:39,970 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:586: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 184, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 131, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 586, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-11-11 06:04:39,973 1 INFO ? odoo: Odoo version 17.0-20241108 
+2024-11-11 06:04:39,974 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-11-11 06:04:39,975 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-11-11 06:04:39,975 1 INFO ? odoo: database: odoo@db:5432 
+2024-11-11 06:04:40,167 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-11-11 06:04:40,493 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on e8ac9c6e24d5:8069 
+2024-11-11 06:05:09,847 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-11-11 06:05:09,869 1 INFO prueba odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-11 06:05:09,913 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-11-11 06:05:09,925 1 INFO prueba odoo.modules.loading: loading 12 modules... 
+2024-11-11 06:05:10,062 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.ciclo is not overriding the create method in batch 
+2024-11-11 06:05:10,077 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.curso is not overriding the create method in batch 
+2024-11-11 06:05:10,105 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.estudiante is not overriding the create method in batch 
+2024-11-11 06:05:10,132 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.horario is not overriding the create method in batch 
+2024-11-11 06:05:10,151 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.materia is not overriding the create method in batch 
+2024-11-11 06:05:10,171 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.modalidad_gestion is not overriding the create method in batch 
+2024-11-11 06:05:10,186 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.profesor is not overriding the create method in batch 
+2024-11-11 06:05:10,202 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.tutor is not overriding the create method in batch 
+2024-11-11 06:05:10,211 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.comunicado is not overriding the create method in batch 
+2024-11-11 06:05:10,458 1 INFO prueba odoo.modules.loading: 12 modules loaded in 0.53s, 0 queries (+0 extra) 
+2024-11-11 06:05:10,489 1 WARNING prueba odoo.fields: Field pruebamjp.asistencia_wizard_line.wizard_id with unknown comodel_name 'pruebamjp.asistencia_wizard' 
+2024-11-11 06:05:10,500 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-11-11 06:05:10,508 1 INFO prueba odoo.modules.registry: Registry loaded in 0.730s 
+2024-11-11 06:05:10,510 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-11 06:05:10,550 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:10] "GET / HTTP/1.1" 303 - 21 0.081 0.696
+2024-11-11 06:05:12,307 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-11-11 06:05:12,515 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:12] "GET /web HTTP/1.1" 200 - 71 0.100 1.853
+2024-11-11 06:05:12,928 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:12] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.005 0.078
+2024-11-11 06:05:13,239 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:13] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.012 0.034
+2024-11-11 06:05:13,351 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:13] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.004 0.008
+2024-11-11 06:05:13,420 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:13] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.009
+2024-11-11 06:05:13,741 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-11-11 06:05:14,196 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:14] "POST /web/action/load HTTP/1.1" 200 - 9 0.011 0.970
+2024-11-11 06:05:15,234 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:15] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.004
+2024-11-11 06:05:32,165 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:32] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 18 0.048 0.037
+2024-11-11 06:05:32,209 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:32] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 3 0.003 0.017
+2024-11-11 06:05:32,220 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:32] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.003 0.024
+2024-11-11 06:05:34,851 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:34] "GET /web HTTP/1.1" 200 - 9 0.005 0.011
+2024-11-11 06:05:34,971 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:34] "POST /web/action/load HTTP/1.1" 200 - 8 0.006 0.015
+2024-11-11 06:05:34,971 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:34] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 3 0.010 0.008
+2024-11-11 06:05:35,017 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:35] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.007 0.019
+2024-11-11 06:05:35,038 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:35] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 2 0.001 0.018
+2024-11-11 06:05:35,038 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:35] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.005 0.017
+2024-11-11 06:05:35,045 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:35] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.024
+2024-11-11 06:05:35,077 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:35] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.005
+2024-11-11 06:05:35,084 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:35] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.011
+2024-11-11 06:05:36,686 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:05:36] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-11 06:09:04,186 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:04] "GET / HTTP/1.1" 303 - 2 0.001 0.011
+2024-11-11 06:09:04,241 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:04] "GET /web HTTP/1.1" 200 - 9 0.007 0.025
+2024-11-11 06:09:04,588 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:04] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.007 0.022
+2024-11-11 06:09:04,589 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:04] "POST /web/action/load HTTP/1.1" 200 - 8 0.017 0.011
+2024-11-11 06:09:04,600 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:04] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.014 0.011
+2024-11-11 06:09:04,628 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:04] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 2 0.001 0.005
+2024-11-11 06:09:04,671 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:04] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.003
+2024-11-11 06:09:04,671 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:04] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.002 0.004
+2024-11-11 06:09:06,329 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:06] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-11 06:09:56,332 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:56] "POST /web/action/load HTTP/1.1" 200 - 9 0.004 0.007
+2024-11-11 06:09:56,498 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:56] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 41 0.071 0.069
+2024-11-11 06:09:56,520 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:56] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.007
+2024-11-11 06:09:56,738 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:56] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.036 0.189
+2024-11-11 06:09:56,794 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:56] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.012 0.262
+2024-11-11 06:09:59,662 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:59] "POST /web/action/load HTTP/1.1" 200 - 8 0.004 0.010
+2024-11-11 06:09:59,720 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:59] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 7 0.012 0.013
+2024-11-11 06:09:59,783 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:59] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 27 0.023 0.027
+2024-11-11 06:09:59,823 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:59] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-11 06:09:59,844 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:09:59] "POST /base_setup/data HTTP/1.1" 200 - 6 0.010 0.003
+2024-11-11 06:10:02,164 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:02] "GET /web?debug=1 HTTP/1.1" 200 - 22 0.013 0.035
+2024-11-11 06:10:02,191 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:02] "GET /web/webclient/load_menus/bde05074e9b01be728c717a91f882bdb50a7856048e97417403f00c8d512369c HTTP/1.1" 200 - 1 0.001 0.004
+2024-11-11 06:10:02,379 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:02] "POST /web/action/load HTTP/1.1" 200 - 8 0.013 0.010
+2024-11-11 06:10:02,383 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:02] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.013 0.017
+2024-11-11 06:10:02,393 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:02] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.008 0.015
+2024-11-11 06:10:02,422 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:02] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-11 06:10:02,446 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:02] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.002 0.003
+2024-11-11 06:10:02,446 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:02] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-11 06:10:04,129 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:04] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-11 06:10:06,714 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:06] "POST /web/action/load HTTP/1.1" 200 - 9 0.004 0.007
+2024-11-11 06:10:06,748 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:06] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-11 06:10:06,766 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:06] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.004
+2024-11-11 06:10:06,803 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:06] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.031
+2024-11-11 06:10:06,812 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:06] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.028 0.019
+2024-11-11 06:10:08,413 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:08] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.012 0.031
+2024-11-11 06:10:08,420 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:08] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.034 0.018
+2024-11-11 06:10:09,873 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:09] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.028 0.024
+2024-11-11 06:10:09,897 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:09] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.010
+2024-11-11 06:10:13,263 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['pruebamjp'] to user daniel@gmail.com #2 via 172.18.0.1 
+2024-11-11 06:10:13,264 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['pruebamjp'] to user daniel@gmail.com #2 via 172.18.0.1 
+2024-11-11 06:10:13,265 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['pruebamjp'] to user daniel@gmail.com #2 via 172.18.0.1 
+2024-11-11 06:10:14,019 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user daniel@gmail.com #2 via 172.18.0.1 
+2024-11-11 06:10:14,731 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-11-11 06:10:14,737 1 INFO prueba odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-11 06:10:14,754 1 INFO prueba odoo.modules.loading: updating modules list 
+2024-11-11 06:10:14,756 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2024-11-11 06:10:15,449 1 INFO prueba odoo.modules.loading: loading 12 modules... 
+2024-11-11 06:10:15,450 1 INFO prueba odoo.modules.loading: Loading module pruebamjp (2/12) 
+2024-11-11 06:10:15,486 1 INFO prueba odoo.modules.registry: module pruebamjp: creating or updating database tables 
+2024-11-11 06:10:15,595 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:15,596 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:15,596 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante) of pruebamjp.inscripcion() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:15,597 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (curso_nombre, curso) of pruebamjp.inscripcion() have the same label: Curso. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:15,597 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.nota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:15,597 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.subnota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:15,681 1 INFO prueba odoo.modules.loading: loading pruebamjp/security/ir.model.access.csv 
+2024-11-11 06:10:15,729 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/templates.xml 
+2024-11-11 06:10:15,748 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/curso.xml 
+2024-11-11 06:10:15,780 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/materia.xml 
+2024-11-11 06:10:15,805 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/ciclo.xml 
+2024-11-11 06:10:15,831 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/gestion.xml 
+2024-11-11 06:10:15,863 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/modalidad.xml 
+2024-11-11 06:10:15,889 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/profesor.xml 
+2024-11-11 06:10:15,918 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/estudiante.xml 
+2024-11-11 06:10:15,946 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/tutor.xml 
+2024-11-11 06:10:15,973 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/horario.xml 
+2024-11-11 06:10:16,002 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/curso_materia.xml 
+2024-11-11 06:10:16,032 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/estudiante_tutor.xml 
+2024-11-11 06:10:16,058 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/inscripcion.xml 
+2024-11-11 06:10:16,083 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/nota.xml 
+2024-11-11 06:10:16,116 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/subnota.xml 
+2024-11-11 06:10:16,144 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/mensualidad.xml 
+2024-11-11 06:10:16,164 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/comunicado.xml 
+2024-11-11 06:10:16,194 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/comunicado_usuario.xml 
+2024-11-11 06:10:16,222 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/asistencia.xml 
+2024-11-11 06:10:16,253 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/views.xml 
+2024-11-11 06:10:16,337 1 INFO prueba odoo.modules.loading: Module pruebamjp: loading demo 
+2024-11-11 06:10:16,338 1 INFO prueba odoo.modules.loading: loading pruebamjp/demo/demo.xml 
+2024-11-11 06:10:16,356 1 INFO prueba odoo.addons.base.models.ir_module: module pruebamjp: no translation for language es_BO 
+2024-11-11 06:10:16,367 1 WARNING prueba odoo.modules.loading: The models ['pruebamjp.asistencia_wizard_line'] have no access rules in module pruebamjp, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+pruebamjp.access_pruebamjp_asistencia_wizard_line,access_pruebamjp_asistencia_wizard_line,pruebamjp.model_pruebamjp_asistencia_wizard_line,base.group_user,1,0,0,0 
+2024-11-11 06:10:16,376 1 INFO prueba odoo.modules.loading: Module pruebamjp loaded in 0.93s, 742 queries (+742 other) 
+2024-11-11 06:10:16,385 1 INFO prueba odoo.modules.loading: 12 modules loaded in 0.94s, 742 queries (+742 extra) 
+2024-11-11 06:10:16,497 1 INFO prueba odoo.modules.registry: verifying fields for every extended model 
+2024-11-11 06:10:16,558 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante) of pruebamjp.inscripcion() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:16,559 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (curso_nombre, curso) of pruebamjp.inscripcion() have the same label: Curso. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:16,560 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.subnota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:16,560 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:16,561 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:16,562 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.nota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:10:16,822 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-11-11 06:10:16,827 1 INFO prueba odoo.modules.registry: Registry loaded in 2.116s 
+2024-11-11 06:10:16,828 1 INFO prueba odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-11-11 06:10:16,833 1 INFO prueba odoo.modules.registry: Registry changed, signaling through the database 
+2024-11-11 06:10:16,835 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:16] "POST /web/dataset/call_button HTTP/1.1" 200 - 4122 1.623 1.956
+2024-11-11 06:10:16,873 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-11 06:10:17,106 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:17] "GET /web HTTP/1.1" 200 - 70 0.032 0.210
+2024-11-11 06:10:17,262 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:17] "POST /web/action/load HTTP/1.1" 200 - 9 0.013 0.012
+2024-11-11 06:10:17,266 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:17] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.016 0.018
+2024-11-11 06:10:17,269 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:17] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.005 0.012
+2024-11-11 06:10:17,387 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:17] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 19 0.008 0.079
+2024-11-11 06:10:17,405 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:17] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-11 06:10:17,405 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:17] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2024-11-11 06:10:18,968 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:10:18] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2024-11-11 06:14:35,899 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-11-11 06:14:35,901 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-11-11 06:14:35,911 1 ERROR ? odoo.addons.bus.models.bus: Bus.loop error, sleep and retry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 254, in run
+    self.loop()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 239, in loop
+    conn.poll()
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2024-11-11 06:14:35,918 1 INFO prueba odoo.sql_db: Connection to the database failed 
+2024-11-11 06:14:35,919 1 WARNING prueba odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 119, in _process_jobs
+    with db.cursor() as cron_cr:
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 753, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 267, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-13>", line 2, in borrow
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 682, in borrow
+    result = psycopg2.connect(
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-11-11 06:14:35,923 1 INFO prueba odoo.sql_db: Connection to the database failed 
+2024-11-11 06:14:35,927 1 WARNING prueba odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 119, in _process_jobs
+    with db.cursor() as cron_cr:
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 753, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 267, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-13>", line 2, in borrow
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 682, in borrow
+    result = psycopg2.connect(
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-11-11 06:14:37,542 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 1 connections  
+2024-11-11 06:14:37,554 1 ERROR prueba odoo.addons.bus.websocket: cursor already closed 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.rule', <function IrRule._compute_domain at 0x7feeeeed8820>, 2, False, 'bus.presence', 'read', (None,))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 317, in get_messages
+    message = self._process_next_message()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 463, in _process_next_message
+    self._handle_control_frame(frame)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 601, in _handle_control_frame
+    self._terminate()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 584, in _terminate
+    env["ir.websocket"]._on_websocket_closed(self._cookies)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/ir_websocket.py", line 136, in _on_websocket_closed
+    self.env["bus.presence"].search([("user_id", "=", self.env.uid)]).status = "offline"
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 1618, in search
+    return self.search_fetch(domain, [], offset=offset, limit=limit, order=order)
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 1641, in search_fetch
+    query = self._search(domain, offset=offset, limit=limit, order=order or self._order)
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 5414, in _search
+    self._flush_search(domain, order=order)
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 5371, in _flush_search
+    if ir_rule_domain := self.env['ir.rule']._compute_domain(self._name, 'read'):
+  File "<decorator-gen-65>", line 2, in _compute_domain
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_rule.py", line 147, in _compute_domain
+    rules = self._get_rules(model_name, mode=mode)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_rule.py", line 131, in _get_rules
+    return self.browse(row[0] for row in self._cr.fetchall())
+psycopg2.InterfaceError: cursor already closed
+2024-11-11 06:14:40,013 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 184, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 131, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-11-11 06:14:40,015 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:586: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 184, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 131, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 586, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-11-11 06:14:40,015 1 INFO ? odoo: Odoo version 17.0-20241108 
+2024-11-11 06:14:40,017 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-11-11 06:14:40,017 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-11-11 06:14:40,018 1 INFO ? odoo: database: odoo@db:5432 
+2024-11-11 06:14:40,164 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-11-11 06:14:40,501 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on e8ac9c6e24d5:8069 
+2024-11-11 06:14:42,857 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-11-11 06:14:42,867 1 INFO prueba odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-11 06:14:42,904 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-11-11 06:14:42,913 1 INFO prueba odoo.modules.loading: loading 12 modules... 
+2024-11-11 06:14:43,030 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.ciclo is not overriding the create method in batch 
+2024-11-11 06:14:43,043 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.curso is not overriding the create method in batch 
+2024-11-11 06:14:43,057 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.estudiante is not overriding the create method in batch 
+2024-11-11 06:14:43,074 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.horario is not overriding the create method in batch 
+2024-11-11 06:14:43,090 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.materia is not overriding the create method in batch 
+2024-11-11 06:14:43,106 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.modalidad_gestion is not overriding the create method in batch 
+2024-11-11 06:14:43,118 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.profesor is not overriding the create method in batch 
+2024-11-11 06:14:43,129 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.tutor is not overriding the create method in batch 
+2024-11-11 06:14:43,143 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.comunicado is not overriding the create method in batch 
+2024-11-11 06:14:43,335 1 INFO prueba odoo.modules.loading: 12 modules loaded in 0.42s, 0 queries (+0 extra) 
+2024-11-11 06:14:43,370 1 WARNING prueba odoo.fields: Field pruebamjp.asistencia_wizard_line.wizard_id with unknown comodel_name 'pruebamjp.asistencia_wizard' 
+2024-11-11 06:14:43,383 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-11-11 06:14:43,389 1 INFO prueba odoo.modules.registry: Registry loaded in 0.620s 
+2024-11-11 06:14:43,392 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-11 06:14:43,432 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:43] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 22 0.101 0.566
+2024-11-11 06:14:43,757 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-11-11 06:14:48,546 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-11-11 06:14:48,655 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:48] "GET /web HTTP/1.1" 200 - 65 0.119 1.523
+2024-11-11 06:14:48,901 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:48] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.005 0.007
+2024-11-11 06:14:48,965 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:48] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.002 0.014
+2024-11-11 06:14:48,975 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:48] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.011 0.030
+2024-11-11 06:14:48,982 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:48] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.012 0.046
+2024-11-11 06:14:49,430 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:49] "POST /web/action/load HTTP/1.1" 200 - 9 0.006 0.538
+2024-11-11 06:14:49,469 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:49] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 18 0.013 0.011
+2024-11-11 06:14:49,491 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:49] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.003 0.002
+2024-11-11 06:14:49,491 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:49] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 3 0.004 0.003
+2024-11-11 06:14:51,035 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:14:51] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.004
+2024-11-11 06:15:02,741 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:15:02] "POST /web/action/load HTTP/1.1" 200 - 8 0.004 0.010
+2024-11-11 06:15:02,766 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:15:02] "POST /web/dataset/call_kw/pruebamjp.estudiante/get_views HTTP/1.1" 200 - 12 0.006 0.009
+2024-11-11 06:15:02,781 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:15:02] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 3 0.004 0.003
+2024-11-11 06:15:03,826 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:15:03] "POST /web/dataset/call_kw/pruebamjp.estudiante/onchange HTTP/1.1" 200 - 2 0.001 0.005
+2024-11-11 06:16:28,332 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-11-11 06:16:28,334 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-11-11 06:16:28,344 1 ERROR ? odoo.addons.bus.models.bus: Bus.loop error, sleep and retry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 254, in run
+    self.loop()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 239, in loop
+    conn.poll()
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2024-11-11 06:16:28,350 1 INFO prueba odoo.sql_db: Connection to the database failed 
+2024-11-11 06:16:28,350 1 WARNING prueba odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 119, in _process_jobs
+    with db.cursor() as cron_cr:
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 753, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 267, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-13>", line 2, in borrow
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 682, in borrow
+    result = psycopg2.connect(
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-11-11 06:16:28,358 1 INFO prueba odoo.sql_db: Connection to the database failed 
+2024-11-11 06:16:28,361 1 WARNING prueba odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 119, in _process_jobs
+    with db.cursor() as cron_cr:
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 753, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 267, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-13>", line 2, in borrow
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 682, in borrow
+    result = psycopg2.connect(
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-11-11 06:16:32,642 1 INFO prueba odoo.sql_db: Connection to the database failed 
+2024-11-11 06:16:32,643 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 0 connections  
+2024-11-11 06:16:32,684 1 ERROR prueba odoo.addons.bus.websocket: could not translate host name "db" to address: Name or service not known
+ 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 317, in get_messages
+    message = self._process_next_message()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 463, in _process_next_message
+    self._handle_control_frame(frame)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 601, in _handle_control_frame
+    self._terminate()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 582, in _terminate
+    with acquire_cursor(self._db) as cr:
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 46, in acquire_cursor
+    return odoo.registry(db).cursor()
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 950, in cursor
+    return self._db.cursor()
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 753, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 267, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "<decorator-gen-13>", line 2, in borrow
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 682, in borrow
+    result = psycopg2.connect(
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "db" to address: Name or service not known
+
+2024-11-11 06:16:35,081 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:560: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 184, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 131, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 560, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-11-11 06:16:35,082 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:586: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 184, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 131, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 586, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-11-11 06:16:35,082 1 INFO ? odoo: Odoo version 17.0-20241108 
+2024-11-11 06:16:35,084 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-11-11 06:16:35,084 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-11-11 06:16:35,085 1 INFO ? odoo: database: odoo@db:5432 
+2024-11-11 06:16:35,332 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-11-11 06:16:35,569 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on e8ac9c6e24d5:8069 
+2024-11-11 06:16:36,217 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-11-11 06:16:36,223 1 INFO prueba odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-11 06:16:36,238 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-11-11 06:16:36,244 1 INFO prueba odoo.modules.loading: loading 12 modules... 
+2024-11-11 06:16:36,322 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.ciclo is not overriding the create method in batch 
+2024-11-11 06:16:36,336 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.curso is not overriding the create method in batch 
+2024-11-11 06:16:36,369 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.estudiante is not overriding the create method in batch 
+2024-11-11 06:16:36,382 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.horario is not overriding the create method in batch 
+2024-11-11 06:16:36,397 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.materia is not overriding the create method in batch 
+2024-11-11 06:16:36,411 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.modalidad_gestion is not overriding the create method in batch 
+2024-11-11 06:16:36,429 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.profesor is not overriding the create method in batch 
+2024-11-11 06:16:36,440 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.tutor is not overriding the create method in batch 
+2024-11-11 06:16:36,447 1 WARNING prueba odoo.api.create: The model odoo.addons.pruebamjp.models.comunicado is not overriding the create method in batch 
+2024-11-11 06:16:36,574 1 INFO prueba odoo.modules.loading: 12 modules loaded in 0.33s, 0 queries (+0 extra) 
+2024-11-11 06:16:36,618 1 WARNING prueba odoo.fields: Field pruebamjp.asistencia_wizard_line.wizard_id with unknown comodel_name 'pruebamjp.asistencia_wizard' 
+2024-11-11 06:16:36,627 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-11-11 06:16:36,635 1 INFO prueba odoo.modules.registry: Registry loaded in 0.474s 
+2024-11-11 06:16:36,637 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-11 06:16:38,248 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-11-11 06:16:38,360 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:38] "GET /web HTTP/1.1" 200 - 85 0.181 2.020
+2024-11-11 06:16:38,505 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:38] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.005 0.007
+2024-11-11 06:16:38,564 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:38] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.015 0.026
+2024-11-11 06:16:38,570 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:38] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.002 0.027
+2024-11-11 06:16:38,576 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:38] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.007 0.033
+2024-11-11 06:16:38,883 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-11-11 06:16:39,061 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:39] "POST /web/action/load HTTP/1.1" 200 - 9 0.006 0.573
+2024-11-11 06:16:39,104 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:39] "POST /web/dataset/call_kw/pruebamjp.estudiante/get_views HTTP/1.1" 200 - 18 0.014 0.014
+2024-11-11 06:16:39,126 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:39] "POST /web/dataset/call_kw/pruebamjp.estudiante/onchange HTTP/1.1" 200 - 2 0.003 0.004
+2024-11-11 06:16:40,037 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:40] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.003 0.003
+2024-11-11 06:16:40,037 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:40] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 3 0.004 0.005
+2024-11-11 06:16:40,144 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:40] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.030
+2024-11-11 06:16:41,165 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:41] "GET /web HTTP/1.1" 200 - 9 0.003 0.011
+2024-11-11 06:16:41,284 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:41] "POST /web/action/load HTTP/1.1" 200 - 8 0.005 0.011
+2024-11-11 06:16:41,291 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:41] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 3 0.001 0.005
+2024-11-11 06:16:41,348 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:41] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.007 0.020
+2024-11-11 06:16:41,349 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:41] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.013 0.026
+2024-11-11 06:16:41,359 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:41] "POST /web/dataset/call_kw/pruebamjp.estudiante/get_views HTTP/1.1" 200 - 2 0.001 0.028
+2024-11-11 06:16:41,360 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:41] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.002 0.020
+2024-11-11 06:16:41,381 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:41] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.002 0.004
+2024-11-11 06:16:41,381 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:41] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-11 06:16:42,356 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:42] "POST /web/dataset/call_kw/pruebamjp.estudiante/onchange HTTP/1.1" 200 - 1 0.001 0.004
+2024-11-11 06:16:42,942 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:42] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-11-11 06:16:46,741 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:46] "POST /web/action/load HTTP/1.1" 200 - 9 0.006 0.008
+2024-11-11 06:16:46,822 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:46] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 41 0.040 0.029
+2024-11-11 06:16:46,840 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:46] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.004
+2024-11-11 06:16:46,880 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:46] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.026 0.017
+2024-11-11 06:16:46,922 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:46] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.008 0.073
+2024-11-11 06:16:48,168 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:48] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.034 0.017
+2024-11-11 06:16:48,170 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:48] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.008 0.043
+2024-11-11 06:16:51,598 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:51] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.017 0.018
+2024-11-11 06:16:51,618 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:51] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.006
+2024-11-11 06:16:53,971 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['pruebamjp'] to user daniel@gmail.com #2 via 172.18.0.1 
+2024-11-11 06:16:53,972 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['pruebamjp'] to user daniel@gmail.com #2 via 172.18.0.1 
+2024-11-11 06:16:53,973 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['pruebamjp'] to user daniel@gmail.com #2 via 172.18.0.1 
+2024-11-11 06:16:54,790 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user daniel@gmail.com #2 via 172.18.0.1 
+2024-11-11 06:16:55,524 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-11-11 06:16:55,530 1 INFO prueba odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-11 06:16:55,547 1 INFO prueba odoo.modules.loading: updating modules list 
+2024-11-11 06:16:55,550 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2024-11-11 06:16:56,224 1 INFO prueba odoo.modules.loading: loading 12 modules... 
+2024-11-11 06:16:56,225 1 INFO prueba odoo.modules.loading: Loading module pruebamjp (2/12) 
+2024-11-11 06:16:56,255 1 INFO prueba odoo.modules.registry: module pruebamjp: creating or updating database tables 
+2024-11-11 06:16:56,372 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:56,373 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:56,374 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante) of pruebamjp.inscripcion() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:56,374 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (curso_nombre, curso) of pruebamjp.inscripcion() have the same label: Curso. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:56,375 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.nota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:56,376 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.subnota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:56,478 1 INFO prueba odoo.modules.loading: loading pruebamjp/security/ir.model.access.csv 
+2024-11-11 06:16:56,529 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/templates.xml 
+2024-11-11 06:16:56,536 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/curso.xml 
+2024-11-11 06:16:56,557 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/materia.xml 
+2024-11-11 06:16:56,573 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/ciclo.xml 
+2024-11-11 06:16:56,594 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/gestion.xml 
+2024-11-11 06:16:56,617 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/modalidad.xml 
+2024-11-11 06:16:56,633 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/profesor.xml 
+2024-11-11 06:16:56,649 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/estudiante.xml 
+2024-11-11 06:16:56,674 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/tutor.xml 
+2024-11-11 06:16:56,692 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/horario.xml 
+2024-11-11 06:16:56,708 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/curso_materia.xml 
+2024-11-11 06:16:56,725 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/estudiante_tutor.xml 
+2024-11-11 06:16:56,740 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/inscripcion.xml 
+2024-11-11 06:16:56,756 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/nota.xml 
+2024-11-11 06:16:56,771 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/subnota.xml 
+2024-11-11 06:16:56,788 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/mensualidad.xml 
+2024-11-11 06:16:56,799 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/comunicado.xml 
+2024-11-11 06:16:56,819 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/comunicado_usuario.xml 
+2024-11-11 06:16:56,837 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/asistencia.xml 
+2024-11-11 06:16:56,854 1 INFO prueba odoo.modules.loading: loading pruebamjp/views/views.xml 
+2024-11-11 06:16:56,912 1 INFO prueba odoo.modules.loading: Module pruebamjp: loading demo 
+2024-11-11 06:16:56,913 1 INFO prueba odoo.modules.loading: loading pruebamjp/demo/demo.xml 
+2024-11-11 06:16:56,925 1 INFO prueba odoo.addons.base.models.ir_module: module pruebamjp: no translation for language es_BO 
+2024-11-11 06:16:56,936 1 WARNING prueba odoo.modules.loading: The models ['pruebamjp.asistencia_wizard_line'] have no access rules in module pruebamjp, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+pruebamjp.access_pruebamjp_asistencia_wizard_line,access_pruebamjp_asistencia_wizard_line,pruebamjp.model_pruebamjp_asistencia_wizard_line,base.group_user,1,0,0,0 
+2024-11-11 06:16:56,943 1 INFO prueba odoo.modules.loading: Module pruebamjp loaded in 0.72s, 757 queries (+757 other) 
+2024-11-11 06:16:56,950 1 INFO prueba odoo.modules.loading: 12 modules loaded in 0.73s, 757 queries (+757 extra) 
+2024-11-11 06:16:57,064 1 INFO prueba odoo.modules.registry: verifying fields for every extended model 
+2024-11-11 06:16:57,126 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:57,127 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.nota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:57,128 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante) of pruebamjp.inscripcion() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:57,128 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (curso_nombre, curso) of pruebamjp.inscripcion() have the same label: Curso. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:57,129 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:57,129 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.subnota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-11-11 06:16:57,397 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-11-11 06:16:57,402 1 INFO prueba odoo.modules.registry: Registry loaded in 1.889s 
+2024-11-11 06:16:57,403 1 INFO prueba odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-11-11 06:16:57,409 1 INFO prueba odoo.modules.registry: Registry changed, signaling through the database 
+2024-11-11 06:16:57,411 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "POST /web/dataset/call_button HTTP/1.1" 200 - 4137 1.604 1.841
+2024-11-11 06:16:57,434 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-11 06:16:57,560 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "GET /web HTTP/1.1" 200 - 70 0.029 0.100
+2024-11-11 06:16:57,679 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.002 0.006
+2024-11-11 06:16:57,732 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "POST /web/action/load HTTP/1.1" 200 - 9 0.012 0.014
+2024-11-11 06:16:57,732 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.011 0.022
+2024-11-11 06:16:57,734 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.004 0.016
+2024-11-11 06:16:57,745 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.021 0.011
+2024-11-11 06:16:57,811 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 18 0.010 0.035
+2024-11-11 06:16:57,875 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-11 06:16:57,878 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:57] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 3 0.005 0.005
+2024-11-11 06:16:59,425 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:16:59] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-11-11 06:17:00,789 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:00] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.007
+2024-11-11 06:17:00,827 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:00] "POST /web/dataset/call_kw/pruebamjp.estudiante/get_views HTTP/1.1" 200 - 12 0.007 0.012
+2024-11-11 06:17:00,844 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:00] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2024-11-11 06:17:01,464 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:01] "POST /web/dataset/call_kw/pruebamjp.estudiante/onchange HTTP/1.1" 200 - 2 0.001 0.004
+2024-11-11 06:17:02,395 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:02] "POST /web/dataset/call_kw/res.users/name_search HTTP/1.1" 200 - 12 0.011 0.011
+2024-11-11 06:17:16,497 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:16] "POST /web/dataset/call_kw/res.users/name_search HTTP/1.1" 200 - 4 0.004 0.018
+2024-11-11 06:17:16,762 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:16] "POST /web/dataset/call_kw/res.users/name_search HTTP/1.1" 200 - 4 0.003 0.008
+2024-11-11 06:17:18,321 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:18] "POST /web/dataset/call_kw/res.users/name_search HTTP/1.1" 200 - 4 0.002 0.006
+2024-11-11 06:17:19,990 1 ERROR prueba odoo.sql_db: bad query: INSERT INTO "res_users" ("active", "company_id", "create_date", "create_uid", "partner_id", "write_date", "write_uid") VALUES (true, 1, '2024-11-11 06:17:19.971309', 2, 41, '2024-11-11 06:17:19.971309', 2) RETURNING "id"
+ERROR: null value in column "login" of relation "res_users" violates not-null constraint
+DETAIL:  Failing row contains (8, 1, 41, t, 2024-11-11 06:17:19.971309, null, null, null, 2, 2, null, null, 2024-11-11 06:17:19.971309, null).
+ 
+2024-11-11 06:17:19,998 1 WARNING prueba odoo.http: No se pudo completar la operación:
+- Crear/actualizar: no configuró un campo obligatorio.
+- Eliminar: otro modelo necesita que elimine el registro. Si es posible, archívelo.
+
+Modelo: User (res.users)
+Campo: Login (login)
+ 
+2024-11-11 06:17:19,999 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:19] "POST /web/dataset/call_kw/res.users/name_create HTTP/1.1" 200 - 16 0.011 0.020
+2024-11-11 06:17:20,040 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:20] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 21 0.011 0.020
+2024-11-11 06:17:20,062 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:20] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 8 0.003 0.009
+2024-11-11 06:17:27,645 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:27] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 4 0.002 0.006
+2024-11-11 06:17:39,564 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:39] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 4 0.002 0.007
+2024-11-11 06:17:49,709 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:49] "POST /web/dataset/call_kw/res.users/web_save HTTP/1.1" 200 - 35 0.022 0.042
+2024-11-11 06:17:53,142 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:17:53] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_save HTTP/1.1" 200 - 7 0.007 0.012
+2024-11-11 06:18:03,567 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:03] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 4 0.002 0.004
+2024-11-11 06:18:08,409 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:08] "GET /web/session/logout HTTP/1.1" 303 - 1 0.001 0.008
+2024-11-11 06:18:08,426 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:08] "GET /web HTTP/1.1" 303 - 5 0.003 0.006
+2024-11-11 06:18:08,562 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:08] "GET /web/login HTTP/1.1" 200 - 42 0.038 0.091
+2024-11-11 06:18:08,613 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:08] "GET /web/binary/company_logo HTTP/1.1" 304 - 5 0.009 0.007
+2024-11-11 06:18:08,787 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:08] "GET /web/webclient/translations/1731305888728 HTTP/1.1" 200 - 8 0.002 0.009
+2024-11-11 06:18:10,339 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:10] "GET /web/service-worker.js HTTP/1.1" 200 - 5 0.003 0.010
+2024-11-11 06:18:24,077 1 INFO prueba odoo.addons.base.models.res_users: Login failed for db:prueba login:yossy@gmail.com from 172.18.0.1 
+2024-11-11 06:18:24,662 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:24] "POST /web/login HTTP/1.1" 200 - 12 0.007 0.604
+2024-11-11 06:18:24,685 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:24] "GET /web/binary/company_logo HTTP/1.1" 304 - 5 0.003 0.006
+2024-11-11 06:18:24,757 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:24] "GET /web/webclient/translations/1731305904733 HTTP/1.1" 200 - 6 0.002 0.010
+2024-11-11 06:18:26,280 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:26] "GET /web/service-worker.js HTTP/1.1" 200 - 5 0.002 0.005
+2024-11-11 06:18:31,719 1 INFO prueba odoo.addons.base.models.res_users: Login successful for db:prueba login:daniel@gmail.com from 172.18.0.1 
+2024-11-11 06:18:31,727 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "POST /web/login HTTP/1.1" 303 - 24 0.015 0.474
+2024-11-11 06:18:31,745 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "GET /web HTTP/1.1" 200 - 9 0.003 0.008
+2024-11-11 06:18:31,866 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 3 0.002 0.006
+2024-11-11 06:18:31,933 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "POST /web/action/load HTTP/1.1" 200 - 8 0.019 0.025
+2024-11-11 06:18:31,938 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.035 0.014
+2024-11-11 06:18:31,939 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.005 0.024
+2024-11-11 06:18:31,941 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.016 0.019
+2024-11-11 06:18:31,966 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 2 0.001 0.007
+2024-11-11 06:18:31,986 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.005
+2024-11-11 06:18:31,987 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:31] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.002
+2024-11-11 06:18:33,570 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:33] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2024-11-11 06:18:36,357 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:36] "POST /web/action/load HTTP/1.1" 200 - 8 0.004 0.007
+2024-11-11 06:18:36,373 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:36] "POST /web/dataset/call_kw/pruebamjp.estudiante/get_views HTTP/1.1" 200 - 2 0.001 0.005
+2024-11-11 06:18:36,388 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:36] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 4 0.002 0.005
+2024-11-11 06:18:37,288 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:37] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_read HTTP/1.1" 200 - 4 0.002 0.006
+2024-11-11 06:18:39,172 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:39] "POST /web/dataset/call_kw/res.users/name_search HTTP/1.1" 200 - 5 0.002 0.006
+2024-11-11 06:18:47,499 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:47] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.007
+2024-11-11 06:18:47,529 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:47] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 7 0.007 0.011
+2024-11-11 06:18:47,588 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:47] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 30 0.020 0.024
+2024-11-11 06:18:47,624 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:47] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.002 0.003
+2024-11-11 06:18:47,641 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:47] "POST /base_setup/data HTTP/1.1" 200 - 6 0.004 0.004
+2024-11-11 06:18:51,634 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:51] "POST /web/dataset/call_kw/res.config.settings/web_save HTTP/1.1" 200 - 23 0.015 0.020
+2024-11-11 06:18:51,659 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:51] "POST /web/action/load HTTP/1.1" 200 - 11 0.006 0.009
+2024-11-11 06:18:51,726 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:51] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 40 0.023 0.035
+2024-11-11 06:18:51,753 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:51] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 8 0.005 0.008
+2024-11-11 06:18:52,823 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:52] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 36 0.018 0.040
+2024-11-11 06:18:56,256 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:56] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=es_BO&debug=1 HTTP/1.1" 200 - 7 0.003 0.021
+2024-11-11 06:18:56,308 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:56] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 8 0.008 0.012
+2024-11-11 06:18:59,034 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:18:59] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 8 0.005 0.012
+2024-11-11 06:19:06,167 1 ERROR prueba odoo.sql_db: bad query: DELETE FROM "res_users" WHERE id IN (9)
+ERROR: update or delete on table "res_users" violates foreign key constraint "pruebamjp_estudiante_usuario_id_fkey" on table "pruebamjp_estudiante"
+DETAIL:  Key (id)=(9) is still referenced from table "pruebamjp_estudiante".
+ 
+2024-11-11 06:19:06,172 1 WARNING prueba odoo.http: No se pudo completar la operación: otro modelo necesita que elimine el registro. Si es posible, archívelo.
+
+Modelo: Modelo o tabla estudiante (pruebamjp.estudiante)
+Limitación: pruebamjp_estudiante_usuario_id_fkey
+ 
+2024-11-11 06:19:06,173 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:06] "POST /web/dataset/call_kw/res.users/unlink HTTP/1.1" 200 - 22 0.009 0.100
+2024-11-11 06:19:13,009 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:13] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 8 0.004 0.006
+2024-11-11 06:19:14,704 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:14] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 5 0.002 0.005
+2024-11-11 06:19:18,904 1 INFO prueba odoo.models.unlink: User #2 deleted pruebamjp.estudiante records with IDs: [1] 
+2024-11-11 06:19:18,915 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:18] "POST /web/dataset/call_kw/pruebamjp.estudiante/unlink HTTP/1.1" 200 - 13 0.010 0.020
+2024-11-11 06:19:18,945 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:18] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 2 0.001 0.004
+2024-11-11 06:19:21,585 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:21] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 33 0.016 0.022
+2024-11-11 06:19:22,850 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:22] "POST /web/dataset/call_kw/res.config.settings/web_save HTTP/1.1" 200 - 26 0.019 0.023
+2024-11-11 06:19:22,889 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:22] "POST /web/action/load HTTP/1.1" 200 - 11 0.011 0.016
+2024-11-11 06:19:22,921 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:22] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 15 0.007 0.014
+2024-11-11 06:19:27,834 1 INFO prueba odoo.models.unlink: User #2 deleted res.users records with IDs: [9] 
+2024-11-11 06:19:27,844 1 INFO prueba odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2024-11-11 06:19:27,846 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:27] "POST /web/dataset/call_kw/res.users/unlink HTTP/1.1" 200 - 29 0.028 0.030
+2024-11-11 06:19:27,889 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:27] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 24 0.015 0.019
+2024-11-11 06:19:34,180 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:34] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2024-11-11 06:19:36,806 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:36] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2024-11-11 06:19:37,861 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:37] "POST /web/dataset/call_kw/pruebamjp.estudiante/onchange HTTP/1.1" 200 - 2 0.001 0.004
+2024-11-11 06:19:45,938 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:45] "POST /web/dataset/call_kw/res.users/name_search HTTP/1.1" 200 - 4 0.002 0.008
+2024-11-11 06:19:47,370 1 ERROR prueba odoo.sql_db: bad query: INSERT INTO "res_users" ("active", "company_id", "create_date", "create_uid", "partner_id", "write_date", "write_uid") VALUES (true, 1, '2024-11-11 06:19:47.355339', 2, 43, '2024-11-11 06:19:47.355339', 2) RETURNING "id"
+ERROR: null value in column "login" of relation "res_users" violates not-null constraint
+DETAIL:  Failing row contains (10, 1, 43, t, 2024-11-11 06:19:47.355339, null, null, null, 2, 2, null, null, 2024-11-11 06:19:47.355339, null).
+ 
+2024-11-11 06:19:47,373 1 WARNING prueba odoo.http: No se pudo completar la operación:
+- Crear/actualizar: no configuró un campo obligatorio.
+- Eliminar: otro modelo necesita que elimine el registro. Si es posible, archívelo.
+
+Modelo: User (res.users)
+Campo: Login (login)
+ 
+2024-11-11 06:19:47,374 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:47] "POST /web/dataset/call_kw/res.users/name_create HTTP/1.1" 200 - 18 0.008 0.014
+2024-11-11 06:19:47,411 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:47] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 20 0.010 0.017
+2024-11-11 06:19:47,431 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:47] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 9 0.003 0.008
+2024-11-11 06:19:50,234 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:50] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 4 0.002 0.010
+2024-11-11 06:19:53,364 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:19:53] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 4 0.002 0.006
+2024-11-11 06:20:09,945 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:09] "POST /web/dataset/call_kw/res.users/name_search HTTP/1.1" 200 - 5 0.003 0.007
+2024-11-11 06:20:12,532 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:12] "POST /web/dataset/call_kw/res.users/name_search HTTP/1.1" 200 - 4 0.002 0.007
+2024-11-11 06:20:14,059 1 ERROR prueba odoo.sql_db: bad query: INSERT INTO "res_users" ("active", "company_id", "create_date", "create_uid", "partner_id", "write_date", "write_uid") VALUES (true, 1, '2024-11-11 06:20:14.052988', 2, 44, '2024-11-11 06:20:14.052988', 2) RETURNING "id"
+ERROR: null value in column "login" of relation "res_users" violates not-null constraint
+DETAIL:  Failing row contains (11, 1, 44, t, 2024-11-11 06:20:14.052988, null, null, null, 2, 2, null, null, 2024-11-11 06:20:14.052988, null).
+ 
+2024-11-11 06:20:14,061 1 WARNING prueba odoo.http: No se pudo completar la operación:
+- Crear/actualizar: no configuró un campo obligatorio.
+- Eliminar: otro modelo necesita que elimine el registro. Si es posible, archívelo.
+
+Modelo: User (res.users)
+Campo: Login (login)
+ 
+2024-11-11 06:20:14,063 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:14] "POST /web/dataset/call_kw/res.users/name_create HTTP/1.1" 200 - 7 0.003 0.011
+2024-11-11 06:20:14,087 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:14] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 6 0.004 0.010
+2024-11-11 06:20:23,506 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:23] "POST /web/dataset/call_kw/pruebamjp.estudiante/web_search_read HTTP/1.1" 200 - 2 0.001 0.004
+2024-11-11 06:20:25,208 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:25] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 32 0.012 0.012
+2024-11-11 06:20:26,966 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:26] "POST /web/dataset/call_kw/res.config.settings/web_save HTTP/1.1" 200 - 23 0.014 0.021
+2024-11-11 06:20:26,994 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:26] "POST /web/action/load HTTP/1.1" 200 - 11 0.006 0.010
+2024-11-11 06:20:27,020 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:27] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 8 0.005 0.010
+2024-11-11 06:20:29,039 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:29] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 28 0.015 0.028
+2024-11-11 06:20:35,542 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:35] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 7 0.003 0.013
+2024-11-11 06:20:38,453 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:38] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 7 0.004 0.009
+2024-11-11 06:20:42,409 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:42] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 7 0.003 0.011
+2024-11-11 06:20:59,724 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:59] "POST /web/dataset/call_kw/res.users/web_save HTTP/1.1" 200 - 55 0.028 0.047
+2024-11-11 06:20:59,784 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:20:59] "GET /web/image?model=res.users&id=12&field=avatar_128&unique=1731306059000 HTTP/1.1" 200 - 19 0.021 0.021
+2024-11-11 06:21:11,283 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:11] "POST /web/dataset/call_kw/res.partner/get_formview_action HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-11 06:21:11,329 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:11] "POST /web/dataset/call_kw/res.partner/get_views HTTP/1.1" 200 - 26 0.013 0.025
+2024-11-11 06:21:11,362 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:11] "POST /web/dataset/call_kw/res.partner/web_read HTTP/1.1" 200 - 13 0.008 0.011
+2024-11-11 06:21:11,438 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:11] "GET /web/image?model=res.partner&id=45&field=avatar_128&unique=1731306059000 HTTP/1.1" 200 - 8 0.006 0.011
+2024-11-11 06:21:17,705 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:17] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 8 0.004 0.009
+2024-11-11 06:21:19,137 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:19] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 34 0.014 0.020
+2024-11-11 06:21:23,024 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:23] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 9 0.004 0.009
+2024-11-11 06:21:27,603 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:27] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 9 0.004 0.009
+2024-11-11 06:21:29,379 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:29] "POST /web/dataset/call_kw/res.config.settings/web_save HTTP/1.1" 200 - 14 0.006 0.017
+2024-11-11 06:21:29,403 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:29] "POST /web/action/load HTTP/1.1" 200 - 11 0.004 0.009
+2024-11-11 06:21:29,426 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:29] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 8 0.003 0.008
+2024-11-11 06:21:34,105 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:34] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 30 0.017 0.030
+2024-11-11 06:21:38,338 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:38] "POST /web/action/load HTTP/1.1" 200 - 9 0.005 0.010
+2024-11-11 06:21:38,367 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:38] "POST /web/dataset/call_kw/change.password.wizard/get_views HTTP/1.1" 200 - 11 0.007 0.011
+2024-11-11 06:21:38,383 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:38] "POST /web/dataset/call_kw/change.password.wizard/onchange HTTP/1.1" 200 - 5 0.003 0.005
+2024-11-11 06:21:48,769 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:48] "POST /web/dataset/call_kw/change.password.wizard/web_save HTTP/1.1" 200 - 11 0.009 0.014
+2024-11-11 06:21:48,790 1 INFO prueba odoo.addons.base.models.res_users: Password change for 'yossy@gmail.com' (#12) by 'daniel@gmail.com' (#2) from 172.18.0.1 
+2024-11-11 06:21:49,241 1 INFO prueba odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2024-11-11 06:21:49,243 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:49] "POST /web/dataset/call_button HTTP/1.1" 200 - 21 0.011 0.454
+2024-11-11 06:21:49,310 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:49] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 58 0.027 0.033
+2024-11-11 06:21:51,921 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:51] "GET /web/session/logout HTTP/1.1" 303 - 1 0.001 0.008
+2024-11-11 06:21:51,934 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:51] "GET /web HTTP/1.1" 303 - 5 0.002 0.005
+2024-11-11 06:21:52,001 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:52] "GET /web/login HTTP/1.1" 200 - 28 0.013 0.044
+2024-11-11 06:21:52,078 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:52] "GET /web/binary/company_logo HTTP/1.1" 304 - 5 0.016 0.020
+2024-11-11 06:21:52,246 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:52] "GET /web/webclient/translations/1731306112198 HTTP/1.1" 200 - 7 0.003 0.011
+2024-11-11 06:21:53,721 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:21:53] "GET /web/service-worker.js HTTP/1.1" 200 - 5 0.002 0.005
+2024-11-11 06:22:00,517 1 INFO prueba odoo.addons.base.models.res_users: Login successful for db:prueba login:yossy@gmail.com from 172.18.0.1 
+2024-11-11 06:22:00,530 1 INFO prueba odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2024-11-11 06:22:00,532 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "POST /web/login HTTP/1.1" 303 - 42 0.021 0.539
+2024-11-11 06:22:00,604 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "GET /web HTTP/1.1" 200 - 51 0.022 0.043
+2024-11-11 06:22:00,641 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "GET /web/webclient/load_menus/9f06e6f02ab930d71ebc122e399e32b415c2cc80b21641b793d6bee9e8bfefc3 HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-11 06:22:00,758 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 3 0.002 0.006
+2024-11-11 06:22:00,793 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "POST /web/action/load HTTP/1.1" 200 - 8 0.007 0.011
+2024-11-11 06:22:00,809 1 INFO prueba odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 12, model: ir.module.module 
+2024-11-11 06:22:00,827 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.015 0.026
+2024-11-11 06:22:00,829 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.003 0.026
+2024-11-11 06:22:00,855 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 12 0.012 0.012
+2024-11-11 06:22:00,859 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "GET /web/image?model=res.users&field=avatar_128&id=12 HTTP/1.1" 200 - 17 0.054 0.023
+2024-11-11 06:22:00,885 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-11 06:22:00,889 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:00] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 3 0.005 0.005
+2024-11-11 06:22:02,499 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:02] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2024-11-11 06:22:14,340 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:14] "GET /web/session/logout HTTP/1.1" 303 - 1 0.001 0.008
+2024-11-11 06:22:14,356 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:14] "GET /web HTTP/1.1" 303 - 5 0.002 0.006
+2024-11-11 06:22:14,429 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:14] "GET /web/login HTTP/1.1" 200 - 18 0.010 0.056
+2024-11-11 06:22:14,480 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:14] "GET /web/binary/company_logo HTTP/1.1" 304 - 5 0.003 0.016
+2024-11-11 06:22:14,572 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:14] "GET /web/webclient/translations/1731306134493 HTTP/1.1" 200 - 8 0.003 0.009
+2024-11-11 06:22:16,115 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:16] "GET /web/service-worker.js HTTP/1.1" 200 - 5 0.002 0.005
+2024-11-11 06:22:18,840 1 INFO prueba odoo.addons.base.models.res_users: Login successful for db:prueba login:daniel@gmail.com from 172.18.0.1 
+2024-11-11 06:22:18,853 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:18] "POST /web/login HTTP/1.1" 303 - 40 0.017 0.474
+2024-11-11 06:22:18,900 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:18] "GET /web HTTP/1.1" 200 - 30 0.015 0.027
+2024-11-11 06:22:19,012 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:19] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 3 0.002 0.004
+2024-11-11 06:22:19,064 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:19] "POST /web/action/load HTTP/1.1" 200 - 8 0.018 0.013
+2024-11-11 06:22:19,069 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:19] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.017 0.016
+2024-11-11 06:22:19,074 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:19] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.014
+2024-11-11 06:22:19,076 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:19] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 6 0.007 0.023
+2024-11-11 06:22:19,124 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:19] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 9 0.007 0.009
+2024-11-11 06:22:19,143 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:19] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2024-11-11 06:22:19,144 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:19] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.003
+2024-11-11 06:22:20,763 1 INFO prueba werkzeug: 172.18.0.1 - - [11/Nov/2024 06:22:20] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002

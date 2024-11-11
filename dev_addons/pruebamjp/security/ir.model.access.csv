@@ -11,7 +11,7 @@ access_pruebamjp_inscripcion,pruebamjp.inscripcion,model_pruebamjp_inscripcion,b
 access_pruebamjp_mensualidad,pruebamjp.mensualidad,model_pruebamjp_mensualidad,base.group_user,1,1,1,1
 access_pruebamjp_modalidad_gestion,pruebamjp.modalidad_gestion,model_pruebamjp_modalidad_gestion,base.group_user,1,1,1,1
 access_pruebamjp_nota,pruebamjp.nota,model_pruebamjp_nota,base.group_user,1,1,1,1
-access_pruebamjp_profesor,pruebamjp.profesor,model_pruebamjp_profesor,base.group_user,1,1,1,1
+access_pruebamjp_profesor,pruebamjp.profesor,model_pruebamjp_profesor,base.group_system,1,1,1,1
 access_pruebamjp_subnota,pruebamjp.subnota,model_pruebamjp_subnota,base.group_user,1,1,1,1
 access_pruebamjp_tutor,pruebamjp.tutor,model_pruebamjp_tutor,base.group_user,1,1,1,1
 access_pruebamjp_comunicado,pruebamjp.comunicado,model_pruebamjp_comunicado,base.group_user,1,1,1,1

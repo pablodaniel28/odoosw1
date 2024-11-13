@@ -1,0 +1,58 @@
+<odoo>
+    <data>
+        <!-- Vista de Lista para Agenda -->
+        <record id="view_agenda_tree" model="ir.ui.view">
+            <field name="name">colegio.agenda.tree</field>
+            <field name="model">colegio.agenda</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre"/>
+                    <field name="event_type"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista de Formulario para Agenda -->
+        <record id="view_agenda_form" model="ir.ui.view">
+            <field name="name">colegio.agenda.form</field>
+            <field name="model">colegio.agenda</field>
+            <field name="arch" type="xml">
+                <form string="Agenda">
+                    <sheet>
+                        <group>
+                            <field name="nombre"/>
+                            <field name="event_type"/>
+                            <field name="description"/>
+                            <field name="date_start"/>
+                            <field name="date_end"/>
+                            <field name="actividad_ids" context="{'form_view_ref': 'colegio.actividad_create'}"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vista de Calendario para Agenda -->
+        <record id="view_agenda_calendar" model="ir.ui.view">
+            <field name="name">colegio.agenda.calendar</field>
+            <field name="model">colegio.agenda</field>
+            <field name="arch" type="xml">
+                <calendar string="Agenda" date_start="date_start" date_stop="date_end">
+                    <field name="nombre"/>
+                    <field name="event_type"/>
+                </calendar>
+            </field>
+        </record>
+
+        <!-- Acción para abrir la vista de Agenda -->
+        <record id="action_agenda_window" model="ir.actions.act_window">
+            <field name="name">Agenda</field>
+            <field name="res_model">colegio.agenda</field>
+            <field name="view_mode">tree,form,calendar</field>
+            <field name="view_id" ref="view_agenda_calendar"/>
+        </record>
+
+    </data>
+</odoo>

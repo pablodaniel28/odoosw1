@@ -1,61 +1,73 @@
+import logging
 from odoo import http
 from odoo.http import request
 import json
 
+_logger = logging.getLogger(__name__)
+
 class ComunicadoController(http.Controller):
 
-    @http.route('/api/comunicados/general', auth='user', type='http', methods=['GET'], csrf=False)
+    @http.route('/api/comunicados/general', auth='public', type='http', methods=['GET'], csrf=False)
     def get_comunicados_general(self, **kwargs):
-        comunicados = request.env['pruebamjp.comunicado_usuario'].search([('usuario_recibe_id', 'in', request.env['res.users'].search([]).ids)])
-        data = [{
-            'nombre': com.comunicado_id.nombre,
-            'descripcion': com.comunicado_id.description,
-            'fecha': com.comunicado_id.fecha.strftime("%Y-%m-%d %H:%M:%S"),
-            'visto': com.visto
-        } for com in comunicados]
+        _logger.info("Iniciando obtención de comunicados para el usuario.")
+        
+        # Verifica que la consulta se realiza correctamente
+        comunicados = request.env['pruebamjp.comunicado_usuario'].sudo().search([])
+        data = []  # Definimos la lista `data` aquí para evitar errores
+
+        seen_ids = set()  # Usamos un conjunto para evitar duplicados
+
+        for com in comunicados:
+            # Evitar procesar comunicados duplicados
+            if com.comunicado_id.id not in seen_ids:
+                seen_ids.add(com.comunicado_id.id)  # Añadir el ID al conjunto
+
+                comunicado = com.comunicado_id
+                multimedia_data = []
+
+                # Procesamos los enlaces multimedia
+                if comunicado.audio_url:
+                    multimedia_data.append({
+                        'name': 'Audio',
+                        'type': 'audio/mpeg',
+                        'url': comunicado.audio_url
+                    })
+                if comunicado.video_url:
+                    multimedia_data.append({
+                        'name': 'Video',
+                        'type': 'video/mp4',
+                        'url': comunicado.video_url
+                    })
+                if comunicado.imagen_url:
+                    multimedia_data.append({
+                        'name': 'Imagen',
+                        'type': 'image/png',
+                        'url': comunicado.imagen_url
+                    })
+
+                # Agregamos los adjuntos de Odoo, si existen
+                for attachment in comunicado.attachment_ids:
+                    multimedia_data.append({
+                        'name': attachment.name,
+                        'type': attachment.mimetype,
+                        'url': f"/web/content/{attachment.id}?download=true" if attachment.datas else None
+                    })
+
+                # Construir los datos del comunicado
+                comunicado_data = {
+                    'nombre': comunicado.nombre,
+                    'descripcion': comunicado.description,
+                    'fecha': comunicado.fecha.strftime("%Y-%m-%d %H:%M:%S"),
+                    'visto': com.visto,
+                    'multimedia': multimedia_data
+                }
+                
+                # Log de cada comunicado procesado
+                _logger.info("Comunicado procesado: %s", json.dumps(comunicado_data, indent=2))
+                data.append(comunicado_data)
+
+        # Log de los datos finales que se enviarán
+        _logger.info("Datos finales enviados en la respuesta: %s", json.dumps(data, indent=2))
+
+        # Enviar la respuesta en formato JSON
         return request.make_response(json.dumps(data), headers=[('Content-Type', 'application/json')])
-
-
-    # @http.route('/api/comunicados/curso/<int:curso_id>', auth='user', type='http', methods=['GET'], csrf=False)
-    # def get_comunicados_curso(self, curso_id, **kwargs):
-    #     curso = request.env['pruebamjp.curso'].browse(curso_id)
-    #     if not curso.exists():
-    #         return request.make_response(json.dumps({'error': 'Curso no encontrado'}), status=404)
-
-    #     tutores_ids = [inscripcion.estudiante_id.estudiante_tutor_ids.tutor_id.usuario_id.id for inscripcion in curso.inscripcion_ids]
-    #     comunicados = request.env['pruebamjp.comunicado_usuario'].search([('usuario_recibe_id', 'in', tutores_ids)])
-
-    #     data = [{
-    #         'nombre': com.comunicado_id.nombre,
-    #         'descripcion': com.comunicado_id.description,
-    #         'fecha': com.comunicado_id.fecha.strftime("%Y-%m-%d %H:%M:%S"),
-    #         'visto': com.visto
-    #     } for com in comunicados]
-    #     return request.make_response(json.dumps(data), headers=[('Content-Type', 'application/json')])
-
-
-    # @http.route('/api/comunicados/tutor/<int:tutor_id>', auth='user', type='http', methods=['GET'], csrf=False)
-    # def get_comunicados_tutor(self, tutor_id, **kwargs):
-    #     tutor = request.env['pruebamjp.tutor'].browse(tutor_id)
-    #     if not tutor.exists():
-    #         return request.make_response(json.dumps({'error': 'Tutor no encontrado'}), status=404)
-
-    #     comunicados = request.env['pruebamjp.comunicado_usuario'].search([('usuario_recibe_id', '=', tutor.usuario_id.id)])
-
-    #     data = [{
-    #         'nombre': com.comunicado_id.nombre,
-    #         'descripcion': com.comunicado_id.description,
-    #         'fecha': com.comunicado_id.fecha.strftime("%Y-%m-%d %H:%M:%S"),
-    #         'visto': com.visto
-    #     } for com in comunicados]
-    #     return request.make_response(json.dumps(data), headers=[('Content-Type', 'application/json')])
-
-
-    @http.route('/api/comunicados/visto/<int:comunicado_usuario_id>', auth='user', type='http', methods=['POST'], csrf=False)
-    def marcar_como_visto(self, comunicado_usuario_id, **kwargs):
-        comunicado_usuario = request.env['pruebamjp.comunicado_usuario'].browse(comunicado_usuario_id)
-        if not comunicado_usuario.exists():
-            return request.make_response(json.dumps({'error': 'Comunicado no encontrado'}), status=404)
-
-        comunicado_usuario.write({'visto': 'si'})
-        return request.make_response(json.dumps({'success': 'Comunicado marcado como visto'}), headers=[('Content-Type', 'application/json')])

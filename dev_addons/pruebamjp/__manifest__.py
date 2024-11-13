@@ -42,15 +42,10 @@ Long description of module's purpose
         'views/comunicado.xml',
         'views/comunicado_usuario.xml',
         'views/asistencia.xml',
+        'views/agenda.xml',
+        'views/actividad.xml',
+        'views/actividad_usuario.xml',
         'views/views.xml',
-
-        
-        
-              
-
-
-
-
     ],
     'assets': {
         'web.assets_backend': [

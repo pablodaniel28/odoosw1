@@ -1,0 +1,46 @@
+<odoo>
+  <data>
+    <!-- Vista de Lista para Actividad Usuario -->
+    <record model="ir.ui.view" id="pruebamjp.actividad_usuario_index">
+      <field name="name">pruebamjp.actividad_usuario.list</field>
+      <field name="model">pruebamjp.actividad_usuario</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="tutor_usuario_info"/>
+          <field name="usuario_recibe_id"/>
+          <field name="actividad_id"/>
+          <field name="fecha_inicio" string="Fecha Inicio"/>
+          <field name="fecha_fin" string="Fecha Fin"/>
+          <field name="visto"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Vista de Formulario para Actividad Usuario -->
+    <record id="pruebamjp.actividad_usuario" model="ir.ui.view">
+      <field name="name">pruebamjp.actividad_usuario.form</field>
+      <field name="model">pruebamjp.actividad_usuario</field>
+      <field name="arch" type="xml">
+        <form string="Actividad Usuario Formulario">
+          <sheet>
+            <group>
+              <field name="usuario_recibe_id"/>
+              <field name="tutor_usuario_info" readonly="1"/>
+              <field name="actividad_id" context="{'form_view_ref': 'pruebamjp.actividad_create'}"/>
+              <field name="fecha_inicio" readonly="1"/>
+              <field name="fecha_fin" readonly="1"/>
+              <field name="visto"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>  
+
+    <!-- Acción para abrir la vista de Actividad Usuario -->
+    <record model="ir.actions.act_window" id="pruebamjp.action_actividad_usuario_window">
+      <field name="name">ACTIVIDADES PÚBLICO</field>
+      <field name="res_model">pruebamjp.actividad_usuario</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>
+</odoo>

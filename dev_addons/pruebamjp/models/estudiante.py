@@ -21,6 +21,7 @@ class estudiante(models.Model):
     # Relación One2many con el modelo 'estudiante_tutor' (asociando estudiantes con sus tutores)
     estudiante_tutor = fields.One2many(string="estudiante_tutor", comodel_name="pruebamjp.estudiante_tutor", inverse_name='estudiante')
     usuario_id = fields.Many2one('res.users', string='Usuario',required=True)
+
     # Sobrescribe el método create para convertir 'nombre' y 'apellido' en mayúsculas al crear el registro
     @api.model
     def create(self, vals):

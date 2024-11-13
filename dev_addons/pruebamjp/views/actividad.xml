@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+    <!-- Vista de Lista para Actividades -->
+    <record model="ir.ui.view" id="pruebamjp.actividad_index">
+      <field name="name">pruebamjp.actividad.list</field>
+      <field name="model">pruebamjp.actividad</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="description"/>
+          <field name="fecha_inicio"/>
+          <field name="fecha_fin"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Vista de Formulario para Actividades -->
+    <record id="pruebamjp.actividad_create" model="ir.ui.view">
+      <field name="name">pruebamjp.actividad.form</field>
+      <field name="model">pruebamjp.actividad</field>
+      <field name="arch" type="xml">
+        <form string="Actividad Form">
+          <sheet>
+            <group>
+              <field name="nombre"/>
+              <field name="description"/>
+              <field name="fecha_inicio"/>
+              <field name="fecha_fin"/>
+              <field name="actividad_usuario_ids"/>  
+            </group>
+            <group string="Contenido Multimedia">
+              <field name="video" filename="video_filename"/>
+              <field name="imagen" filename="imagen_filename"/>
+              <field name="audio" filename="audio_filename"/>
+            </group>
+            <group name="filtro" string="Filtro para el curso">
+              <field name="curso_id" class="curso_id_custom_style"/>
+              <button name="create_actividad_for_course_users" string="Enviar a Usuarios del Curso" type="object" class="oe_highlight my_custom_button"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- Acción para abrir la vista de Actividades -->
+    <record model="ir.actions.act_window" id="pruebamjp.action_actividad_window">
+      <field name="name">ACTIVIDADES</field>
+      <field name="res_model">pruebamjp.actividad</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>
+</odoo>

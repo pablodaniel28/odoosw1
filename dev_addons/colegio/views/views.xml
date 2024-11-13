@@ -1,0 +1,41 @@
+<odoo>
+  <data>
+
+    <!-- Menú Principal -->
+    <menuitem name="SCHOOLtest" id="colegio.menu_root" />
+
+    <!-- Submenú "Curso" -->
+    <menuitem name="Curso" id="colegio.menu_2" parent="colegio.menu_root" />
+    <menuitem name="cursos" id="colegio.menu_2_list" parent="colegio.menu_2" action="colegio.action_curso_window" />
+    <menuitem name="materias" id="colegio.menu_3_list" parent="colegio.menu_2" action="colegio.action_materia_window" />
+    <menuitem name="profesores" id="colegio.menu_4_list" parent="colegio.menu_2" action="colegio.action_profesor_window" />
+    <menuitem name="ciclos" id="colegio.menu_5_list" parent="colegio.menu_2" action="colegio.action_ciclo_window" />
+    <menuitem name="horarios" id="colegio.menu_12_list" parent="colegio.menu_2" action="colegio.action_horario_window" />
+    <menuitem name="curso_materia" id="colegio.menu_13_list" parent="colegio.menu_2" action="colegio.action_curso_materia_window" />
+
+    <!-- Submenú "Gestion" -->
+    <menuitem name="Gestion" id="colegio.menu_3" parent="colegio.menu_root" />
+    <menuitem name="gestiones" id="colegio.menu_6_list" parent="colegio.menu_3" action="colegio.action_gestion_window" />
+    <menuitem name="periodos academicos" id="colegio.menu_7_list" parent="colegio.menu_3" action="colegio.action_modalidad_gestion_window" />
+
+    <!-- Submenú "Estudiante" -->
+    <menuitem name="Estudiante" id="colegio.menu_4" parent="colegio.menu_root" />
+    <menuitem name="estudiantes" id="colegio.menu_8_list" parent="colegio.menu_4" action="colegio.action_estudiante_window" />
+    <menuitem name="tutores" id="colegio.menu_9_list" parent="colegio.menu_4" action="colegio.action_tutor_window" />
+    <menuitem name="tutores de los estudiantes" id="colegio.menu_16_list" parent="colegio.menu_4" action="colegio.action_estudiante_tutor_window" />
+    <menuitem name="inscripcion" id="colegio.menu_17_list" parent="colegio.menu_4" action="colegio.action_inscripcion_window" />
+    <menuitem name="subnotas" id="colegio.menu_19_list" parent="colegio.menu_4" action="colegio.action_subnota_window" />
+    <menuitem name="mensualidad" id="colegio.menu_20_list" parent="colegio.menu_4" action="colegio.action_mensualidad_window" />
+    <menuitem name="asistencia" id="colegio.menu_29_list" parent="colegio.menu_4" action="colegio.action_asistencia_window" />
+
+    <!-- Submenú "Actividades y Comunicados" -->
+    <menuitem name="Actividades y Comunicados" id="colegio.menu_activities_communications" parent="colegio.menu_root" />
+    <menuitem name="comunicados" id="colegio.menu_25_list" parent="colegio.menu_activities_communications" action="colegio.action_comunicado_window" />
+    <menuitem name="actividades" id="colegio.menu_26_list" parent="colegio.menu_activities_communications" action="colegio.action_actividad_window" />
+
+    <!-- Submenú "Agenda Academica" -->
+    <menuitem name="Agenda Academica" id="colegio.menu_academic_agenda" parent="colegio.menu_root" />
+    <menuitem name="agenda" id="colegio.menu_agenda" parent="colegio.menu_academic_agenda" action="colegio.action_agenda_window" />
+
+  </data>
+</odoo>

@@ -1,0 +1,53 @@
+<odoo>
+  <data>
+      <record model="ir.ui.view" id="colegio.inscripcion_index">
+      <field name="name">colegio inscripcion list</field>
+      <field name="model">colegio.inscripcion</field>
+      <field name="arch" type="xml">
+
+        <tree>
+            <field name="estudiante"/>  
+         <!--  <field name="estudiante_nombre" /> -->
+            <field name="curso" />
+             
+            <field name="gestion_id" />
+        </tree>
+      </field>
+    </record>
+
+   
+     <record id="colegio.inscripcion" model="ir.ui.view">
+      <field name="name">colegio.inscripcion.form</field>
+      <field name="model">colegio.inscripcion</field>
+      <field name="arch" type="xml">
+        <form string="isncripcionform">
+          
+            <group>
+                <field name="estado"></field>
+                <field name="estudiante" />
+                 
+
+                 <field name="curso" />
+                 
+                   
+                <!--  <field name="curso_paralelo" /> -->
+
+                 <field name="gestion_id" />
+                 
+
+
+            </group>
+            
+        </form>
+      </field>
+    </record> 
+
+    <record model="ir.actions.act_window" id="colegio.action_inscripcion_window">
+      
+      <field name="name">Inscripciones</field>
+      <field name="res_model">colegio.inscripcion</field>
+      <field name="view_mode">tree,form</field>
+    </record> 
+
+  </data>
+</odoo>

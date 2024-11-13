@@ -1,0 +1,58 @@
+<odoo>
+  <data>
+    <!-- Vista de Lista -->
+    <record model="ir.ui.view" id="colegio.comunicado_index">
+      <field name="name">colegio comunicado list</field>
+      <field name="model">colegio.comunicado</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre" />
+          <field name="description" />
+          <field name="fecha" />
+        </tree>
+      </field>
+    </record>
+
+    <!-- Vista de Formulario -->
+    <record id="colegio.comunicado_create" model="ir.ui.view">
+      <field name="name">colegio.comunicado.form</field>
+      <field name="model">colegio.comunicado</field>
+      <field name="arch" type="xml">
+        <form string="Comunicado Form">
+          <sheet>
+            <group>
+              <field name="nombre" />
+              <field name="description" />
+              <field name="fecha" />
+
+              <!-- Archivos binarios para subir -->
+              <field name="audio" filename="audio_filename" widget="binary"/>
+              <field name="video" filename="video_filename" widget="binary"/>
+              <field name="imagen" filename="imagen_filename" widget="binary"/>
+
+              <!-- Enlaces de Cloudinary -->
+              <field name="audio_url" widget="url" string="Audio URL"/>
+              <field name="video_url" widget="url" string="Video URL"/>
+              <field name="imagen_url" widget="url" string="Imagen URL"/>
+
+              <field name="comunicado_usuario_ids" />  
+            </group>
+
+            <group name="filtro" string="Filtro para el Curso">
+              <field name="curso_id" class="curso_id_custom_style"/>
+              <button name="create_comunicado_for_all_users" string="Enviar a Todos" type="object" class="oe_highlight my_custom_button"/>
+              <button name="create_comunicado_for_tutors_of_course" string="Enviar a Tutores del Curso" type="object" class="oe_highlight my_custom_button"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- Acción de Ventana -->
+    <record model="ir.actions.act_window" id="colegio.action_comunicado_window">
+      <field name="name">COMUNICADOS</field>
+      <field name="res_model">colegio.comunicado</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>
+</odoo>

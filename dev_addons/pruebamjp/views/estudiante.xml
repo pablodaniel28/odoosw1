@@ -14,7 +14,6 @@
           <field name="nombre" />
           <field name="apellido" />
           <field name="edad" />
-          <field name="usuario_id" />
         </tree>
       </field>
     </record>
@@ -34,7 +33,6 @@
               <field name="nombre" />
               <field name="apellido" />
               <field name="edad" />
-              <field name="usuario_id" />
               <!-- Ejemplo de un campo comentado, que podría activarse en el futuro -->
               <!-- <field name="estudiante_tutor"></field>  -->
             </group>

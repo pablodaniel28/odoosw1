@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   web:
-    image: odoo:17.0
+    build: .  # Esto indica que Docker debe construir la imagen en el directorio actual, donde se encuentra el Dockerfile
     depends_on:
       - db
     ports:

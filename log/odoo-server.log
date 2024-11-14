@@ -38499,3 +38499,17 @@ colegio.access_colegio_asistencia_wizard_line,access_colegio_asistencia_wizard_l
 2024-11-13 20:14:16,555 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:14:16] "POST /web/dataset/call_kw/colegio.agenda/search_read HTTP/1.1" 200 - 2 0.001 0.004
 2024-11-13 20:14:22,519 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:14:22] "POST /web/dataset/call_kw/colegio.agenda/search_read HTTP/1.1" 200 - 2 0.002 0.005
 2024-11-13 20:14:52,330 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:14:52] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.020
+2024-11-13 20:30:02,647 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:30:02] "POST /web/dataset/call_kw/colegio.estudiante/web_search_read HTTP/1.1" 200 - 2 0.001 0.008
+2024-11-13 20:30:28,604 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:30:28] "POST /web/dataset/call_kw/colegio.comunicado/web_search_read HTTP/1.1" 200 - 2 0.001 0.004
+2024-11-13 20:30:30,699 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:30:30] "POST /web/dataset/call_kw/colegio.comunicado/onchange HTTP/1.1" 200 - 1 0.001 0.009
+2024-11-13 20:30:33,959 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:30:33] "POST /web/dataset/call_kw/colegio.agenda/check_access_rights HTTP/1.1" 200 - 1 0.000 0.002
+2024-11-13 20:30:33,972 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:30:33] "POST /web/dataset/call_kw/colegio.agenda/search_read HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-13 20:30:54,020 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:30:54] "POST /web/action/load HTTP/1.1" 200 - 8 0.008 0.015
+2024-11-13 20:30:54,087 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:30:54] "POST /web/dataset/call_kw/colegio.asistencia/get_views HTTP/1.1" 200 - 14 0.010 0.028
+2024-11-13 20:30:54,102 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:30:54] "POST /web/dataset/call_kw/colegio.asistencia/web_search_read HTTP/1.1" 200 - 3 0.003 0.003
+2024-11-13 20:30:55,667 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:30:55] "POST /web/dataset/call_kw/colegio.asistencia/onchange HTTP/1.1" 200 - 2 0.005 0.020
+2024-11-13 20:42:44,127 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 20:42:44] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.004 0.033
+2024-11-13 21:51:54,448 1 INFO prueba werkzeug: 172.18.0.1 - - [13/Nov/2024 21:51:54] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.006
+2024-11-13 21:57:26,465 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-11-13 21:57:26,467 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-11-13 21:57:26,939 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
